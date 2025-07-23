@@ -1,0 +1,34 @@
+<div class="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-xl mt-10">
+  <h1 class="text-3xl font-bold text-indigo-700 mb-6">AI Evaluation Form</h1>
+
+  <%= form_with model: @evaluation, local: true, html: { multipart: true, class: "space-y-6" } do |form| %>
+    <div>
+      <%= form.label :question_text, "Question", class: "block text-sm font-medium text-gray-700" %>
+      <%= form.text_area :question_text, rows: 3, class: "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" %>
+    </div>
+
+    <div>
+      <%= form.label :student_answer, "Student Answer", class: "block text-sm font-medium text-gray-700" %>
+      <%= form.text_area :student_answer, rows: 4, class: "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" %>
+    </div>
+
+    <div>
+      <%= form.label :marks, "Maximum Marks", class: "block text-sm font-medium text-gray-700" %>
+      <%= form.number_field :marks, class: "mt-1 block w-32 rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" %>
+    </div>
+
+    <div>
+      <%= form.label :instructions, "Optional Instructions", class: "block text-sm font-medium text-gray-700" %>
+      <%= form.text_area :instructions, rows: 2, class: "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" %>
+    </div>
+
+    <div>
+      <%= form.label :answer_image, "Upload Student's Answer Image (Optional)", class: "block text-sm font-medium text-gray-700" %>
+      <%= form.file_field :answer_image, class: "mt-1 block w-full text-gray-700" %>
+    </div>
+
+    <div>
+      <%= form.submit "Evaluate with AI", class: "inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-700 transition" %>
+    </div>
+  <% end %>
+</div>

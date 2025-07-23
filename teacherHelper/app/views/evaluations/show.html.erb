@@ -1,0 +1,67 @@
+<div class="max-w-4xl mx-auto py-10 px-6">
+  <div class="bg-white shadow-lg rounded-xl p-6 border border-gray-200">
+    <h1 class="text-3xl font-bold text-indigo-700 mb-6">🧠 AI Evaluation Result</h1>
+
+    <!-- Question -->
+    <div class="mb-4">
+      <h2 class="text-lg font-semibold text-gray-700">📘 Question</h2>
+      <p class="mt-1 text-gray-800"><%= @evaluation.question_text %></p>
+    </div>
+
+    <!-- OCR Extracted Answer -->
+    <div class="mb-4">
+      <h2 class="text-lg font-semibold text-gray-700">✍️ Student Answer (from text or image)</h2>
+      <div class="mt-2 p-3 bg-gray-50 border border-gray-200 rounded text-gray-800 whitespace-pre-wrap">
+        <%= @evaluation.student_answer %>
+      </div>
+
+      <% if @evaluation.student_answer&.include?("OCR Error") %>
+        <div class="mt-2 text-sm text-red-600 font-semibold">
+          ⚠️ Warning: OCR could not extract readable text from the uploaded image.
+        </div>
+      <% end %>
+    </div>
+
+    <!-- Marks -->
+    <div class="mb-4">
+      <h2 class="text-lg font-semibold text-gray-700">🎯 Maximum Marks</h2>
+      <p class="text-gray-800"><%= @evaluation.marks %></p>
+    </div>
+
+    <!-- AI Score -->
+    <div class="mb-4">
+      <h2 class="text-lg font-semibold text-gray-700">🧮 AI Score</h2>
+      <p class="text-indigo-700 font-bold text-xl"><%= @evaluation.ai_score %> / <%= @evaluation.marks %></p>
+    </div>
+
+    <!-- AI Feedback -->
+    <div class="mb-4">
+      <h2 class="text-lg font-semibold text-gray-700">💬 AI Feedback</h2>
+      <p class="mt-2 text-gray-800"><%= @evaluation.ai_feedback %></p>
+    </div>
+
+    <!-- AI Mistakes Summary -->
+    <% if @evaluation.mistakes_summary.present? %>
+      <div class="mb-4">
+        <h2 class="text-lg font-semibold text-gray-700">❌ Mistakes Summary</h2>
+        <ul class="list-disc ml-6 mt-2 text-gray-800">
+          <% JSON.parse(@evaluation.mistakes_summary).each do |mistake| %>
+            <li><%= mistake %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <!-- Uploaded Answer Image -->
+    <% if @evaluation.answer_image.attached? %>
+      <div class="mb-6">
+        <h2 class="text-lg font-semibold text-gray-700">🖼️ Uploaded Image</h2>
+        <div class="mt-3">
+          <%= image_tag @evaluation.answer_image, class: "max-w-full border border-gray-300 rounded-lg shadow-sm" %>
+        </div>
+      </div>
+    <% end %>
+
+    <%= link_to "⬅️ New Evaluation", root_path, class: "inline-block mt-6 text-white bg-indigo-600 hover:bg-indigo-700 px-5 py-2 rounded-lg text-sm font-semibold shadow" %>
+  </div>
+</div>

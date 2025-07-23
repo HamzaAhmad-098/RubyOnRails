@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  question_text: MyText
+  student_answer: MyText
+  marks: 1
+  ai_score: 1
+  ai_feedback: MyText
+  instructions: MyText
+
+two:
+  question_text: MyText
+  student_answer: MyText
+  marks: 1
+  ai_score: 1
+  ai_feedback: MyText
+  instructions: MyText
