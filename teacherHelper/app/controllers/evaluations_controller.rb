@@ -1,4 +1,5 @@
 class EvaluationsController < ApplicationController
+   before_action :authenticate_user! 
   include Rails.application.routes.url_helpers
 
   def new

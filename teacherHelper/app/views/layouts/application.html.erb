@@ -28,10 +28,21 @@
   <body class="bg-slate-50 text-gray-800 min-h-screen font-sans">
     <!-- NAVBAR -->
     <nav class="bg-indigo-700 text-white px-6 py-4 shadow-md">
-      <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-xl font-bold">📘 Teacher AI Assistant</h1>
-        <%= link_to "🏠 Home", root_path, class: "hover:underline" %>
-      </div>
+<div class="container mx-auto flex justify-between items-center">
+  <h1 class="text-xl font-bold">📘 Teacher AI Assistant</h1>
+
+  <div class="flex items-center gap-4">
+    <%= link_to "🏠 Home", root_path, class: "hover:underline" %>
+
+    <% if user_signed_in? %>
+      <%= button_to "🚪 Logout", destroy_user_session_path, method: :delete %>
+
+    <% else %>
+      <%= link_to "🔐 Login", new_user_session_path, class: "hover:underline" %>
+    <% end %>
+  </div>
+</div>
+
     </nav>
 
     <!-- FLASH MESSAGES -->
@@ -46,7 +57,7 @@
         <%= alert %>
       </div>
     <% end %>
-
+     
     <!-- MAIN CONTENT -->
     <main class="container mx-auto px-4 py-6">
       <%= yield %>
