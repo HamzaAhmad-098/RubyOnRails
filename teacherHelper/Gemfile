@@ -7,7 +7,7 @@ gem "cssbundling-rails"
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
-
+gem "devise"
 # Use the Puma web server
 gem "puma", ">= 5.0"
 # Use JavaScript with ESM import maps
