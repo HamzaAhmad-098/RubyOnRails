@@ -64,7 +64,10 @@ config.active_storage.service = :local
   # config.action_mailer.raise_delivery_errors = false
 
   # Set host to be used by links generated in mailer templates.
-  config.action_mailer.default_url_options = { host: "example.com" }
+    config.action_mailer.default_url_options = { host: "teacherhelper.hamzaxdevelopers.dpdns.org" ,
+   port: 3001 , 
+protocol: "https" 
+}
 
   # Specify outgoing SMTP server. Remember to add smtp/* credentials via rails credentials:edit.
   # config.action_mailer.smtp_settings = {
@@ -86,7 +89,10 @@ config.active_storage.service = :local
   config.active_record.attributes_for_inspect = [ :id ]
 <<<<<<< HEAD
 =======
-Rails.application.routes.default_url_options = { host: 'yourdomain.com' }
+  Rails.application.routes.default_url_options = { host:"teacherhelper.hamzaxdevelopers.dpdns.org",
+  port: 3001 ,
+ protocol: "https"
+}
 >>>>>>> cd47d37 (first commit)
 
   # Enable DNS rebinding protection and other `Host` header attacks.
