@@ -78,7 +78,7 @@ Hamza Ahmad
 
 📌 Notes
 
-This repository will keep growing as I explore more Rails topics like in future .
+This repository will keep growing as I explore more Rails topics  in future .
 
 Stay tuned!
 
@@ -95,4 +95,5 @@ Hamza Ahmad
 🔗 Portfolio: portfolio.hamzaxdevelopers.dpdns.org
 
 ⭐️ Support
+
 If you like this project or learned something, please consider giving a ⭐️ on the repository!
