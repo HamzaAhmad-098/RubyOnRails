@@ -19,14 +19,12 @@ This repository includes the following Rails apps:
 | `teacherHelper`    | A helper system aimed to assist teachers with evaluation, file uploads, etc. |
 | `ticket_system_app`| A complete issue tracking system using **Devise** authentication, roles, and ticket management. |
 
+---
+## Amazing Thing 
+I hosted the teacher helper app on my home made server with my custome domain. 
 > 🚨 **Live Demo Hosted on My Own Server!**  
 > Visit: [teacherhelperapp.hamzaxdevelopers.dpdns.org](http://teacherhelperapp.hamzaxdevelopers.dpdns.org)  
 > _Running on a custom Linux server using dynamic DNS and a custom domain setup._
-
----
-## Amazing Thing 
-i hosted the teacher helper app on my home made server with my custome domain 
-link : teacherhelperapp.hamzaxdevelopers.dpdns.org
 
 ## 🧠 Key Concepts Practiced
 
