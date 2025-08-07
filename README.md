@@ -6,6 +6,7 @@ This repo contains a collection of multiple Rails applications that I have built
 > 🎓 Purpose: To practice and demonstrate real-world concepts of modern web application development using Ruby on Rails.
 
 ---
+[![Self-Hosted](https://img.shields.io/badge/Hosted%20on-Homemade%20Server-green)](http://teacherhelperapp.hamzaxdevelopers.dpdns.org)
 
 ## 📁 Repository Structure
 
