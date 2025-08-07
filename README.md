@@ -65,24 +65,33 @@ rails server
 Note: Make sure you have Ruby, Rails, PostgreSQL/MySQL/SQLite3, and Bundler installed.
 
 📥 Downloadable Source Code
+
 You can download the entire repo or individual apps from the releases tab or directly via the GitHub download button.
 
 🧑‍💻 Author
+
 Hamza Ahmad
+
 2nd Year Computer Science Student at UET
+
 📍 Pakistan | 🌐 Learning Full Stack Web Dev
 
 📌 Notes
+
 This repository will keep growing as I explore more Rails topics like in future .
 
 Stay tuned!
 
 📫 Contact
+
 I'm open to internships , remote jobs , freelance projects, or tech collaboration.
 
 Hamza Ahmad
+
 🔗 GitHub: HamzaAhmad-098
+
 📧 Email: jhaji1223@gmail.com
+
 🔗 Portfolio: portfolio.hamzaxdevelopers.dpdns.org
 
 ⭐️ Support
