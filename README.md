@@ -1,5 +1,5 @@
 # 🚀 RubyOnRails Learning Projects
-
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE.md)
 Welcome to my **Ruby on Rails Learning Repository**!  
 This repo contains a collection of multiple Rails applications that I have built as part of my journey to master full-stack Ruby on Rails development — including frontend, backend, authentication, mailing systems, and full SaaS system architecture.
 
