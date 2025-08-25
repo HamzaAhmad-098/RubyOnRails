@@ -68,7 +68,7 @@ Note: Make sure you have Ruby, Rails, PostgreSQL/MySQL/SQLite3, and Bundler inst
 
 You can download the entire repo or individual apps from the releases tab or directly via the GitHub download button.
 
-🧑‍💻 Author
+# 🧑‍💻 Author
 
 Hamza Ahmad
 
@@ -82,7 +82,7 @@ This repository will keep growing as I explore more Rails topics  in future .
 
 Stay tuned!
 
-📫 Contact
+# 📫 Contact
 
 I'm open to internships , remote jobs , freelance projects, or tech collaboration.
 
